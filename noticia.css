@@ -1,0 +1,254 @@
+
+:root {
+  --main-c: #ff6f00; 
+  --black-c: #000;
+  --white-c: #fff;
+  --gray-c: #f8f9fa;
+  --dark-gray: #333;
+  --light-gray: #ddd;
+}
+
+/* Estilos*/
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-c);
+  color: var(--dark-gray);
+}
+
+/* 🔹 Enlaces */
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--main-c);
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--main-c);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Botón*/
+.cta-main {
+  background: linear-gradient(90deg, var(--main-c), #ff9a00);
+  padding: 1rem 1.5rem;
+  color: var(--white-c);
+  font-weight: bold;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.cta-main:hover {
+  background: linear-gradient(90deg, #ff9a00, var(--main-c));
+  transform: scale(1.05);
+}
+
+header.main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo-header {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--main-c);
+  text-transform: uppercase;
+}
+
+.nav-header ul {
+  display: flex;
+  padding: 0;
+}
+
+.nav-header ul li {
+  margin: 0 20px;
+}
+
+.nav-header ul li a {
+  color: var(--white-c);
+  padding: 10px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.nav-header ul li a:hover {
+  color: var(--main-c);
+  transform: scale(1.1);
+}
+
+/* menu*/
+.wrap-header-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url('img/hero-front-page-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-home-page {
+  text-align: center;
+  color: var(--white-c);
+  width: 80%;
+  max-width: 900px;
+}
+
+.hero-home-page p {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+ 
+
+
+
+.politica-section {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrap-title-politica h2 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.politica-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.politica-texto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.politica-texto h3 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.politica-texto p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.cta-politica {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cta-politica-btn {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-politica-btn:hover {
+  background-color: #e24d2b;
+}
+
+footer {
+  background-color: var(--black-c);
+  color: var(--white-c);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.wrap-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.wrap-footer h5 {
+  margin-bottom: 15px;
+  color: var(--main-c);
+}
+
+.text-element-footer ul {
+  padding: 0;
+}
+
+.text-element-footer li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.text-element-footer li a {
+  color: var(--main-c);
+  transition: 0.3s;
+}
+
+.text-element-footer li a:hover {
+  color: #ff9a00;
+}
+
+.footer-creds {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}

@@ -1,0 +1,155 @@
+:root {
+    --main-c: #ff6f00; 
+    --black-c: #000;
+    --white-c: #fff;
+    --gray-c: #f8f9fa;
+    --dark-gray: #333;
+    --light-gray: #ddd;
+  }
+  
+  /* Estilos*/
+  html {
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-c);
+    color: var(--dark-gray);
+  }
+
+  /* menu  */
+header.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo-header {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--main-c);
+    text-transform: uppercase;
+}
+
+.nav-header ul {
+    display: flex;
+    padding: 0;
+}
+
+.nav-header ul li {
+    margin: 0 20px;
+}
+
+.nav-header ul li a {
+    color: var(--white-c);
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.nav-header ul li a:hover {
+    color: var(--main-c);
+    transform: scale(1.1);
+}
+
+.noticia {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.noticia h2 {
+    color: #fc8f09;
+}
+.noticia img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.noticia p {
+    color: #333;
+    line-height: 1.6;
+}
+.leer-mas {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.leer-mas:hover {
+    background: #1e8449;
+}
+
+
+.detalle-noticia {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--black-c);
+    color: var(--white-c);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.wrap-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.wrap-footer h5 {
+    margin-bottom: 15px;
+    color: var(--main-c);
+}
+
+.text-element-footer ul {
+    padding: 0;
+}
+
+.text-element-footer li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.text-element-footer li a {
+    color: var(--main-c);
+    transition: 0.3s;
+}
+
+.text-element-footer li a:hover {
+    color: #ff9a00;
+}
+
+.footer-creds {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
